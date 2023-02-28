@@ -19,9 +19,19 @@
     <header class="container__logo">
       <img class="container__logo__encabezado" src="./images/logo.svg" alt="Logo Base Apparel">
     </header>
-    <img class="contianer__imag" src="./images/hero-mobile.jpg" alt="imagen">
+
+    <div class="container__image">
+      <img class="container__image__img-desktop" src="./images/hero-desktop.jpg" alt="imegen">
+      <img class="contianer__image__imag-mobile" src="./images/hero-mobile.jpg" alt="imagen">
+    </div>
+
+    
 
     <main class="container__content">
+
+      <div class="container__content__logo">
+        <img class="container__content__logo__mobile" src="./images/logo.svg" alt="logo">
+      </div>
       
       <h1 class="container__content__title">We're</h1>
       <h2 class="container__content__title2">coming soon</h2>
@@ -30,13 +40,16 @@
         Add your email below to stay up-to-date with announcements and our launch deals.
       </p>
 
-      <div class="container__content__S1">
-        <input class="container__content__S1__input" type="email" value="Email Address" >
-        <img class="container__content__S1__icon-arrow" src="./images/icon-arrow.svg" alt="icon arrow">
+      <form class="container__content__S1">
+        <input type="email" name="email" class="container__content__S1__input" placeholder="Email Andres">
+        <button class="container__content__S1__button" type="submit">
+          <img class="container__content__S1__button__icon-arrow" src="./images/icon-arrow.svg" alt="icon arrow">
+        </button>
+      </form>
+
+      <div class="container__content__danger">
+        <p class="container__content__danger__paragraph"></p>
       </div>
-
-      
-
     </main>
   </section>
 
@@ -46,5 +59,7 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+
+  <script src="./main.js"></script>
 </body>
 </html>
