@@ -11,6 +11,7 @@ container.addEventListener('submit', (event)=>{
     if(regExp.test(email.value) == true){
         email.style.border = '1px solid hsl(0, 6%, 24%)';
         email.style.backgroundImage = '';
+        errorPar.innerHTML = '';
     }else{
         email.style.border = '1px solid red';
         email.style.backgroundImage = 'url(./images/icon-error.svg)';
